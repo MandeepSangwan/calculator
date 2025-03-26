@@ -4,6 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
     
 }
 .calculator {
@@ -64,8 +65,14 @@ button:active {
 .container{
     height: 400px;
     width: 400px;
-    
-    
-    
 
+}
+.heading{
+    color: white;
+    margin: 100px;
+
+}
+.credit{
+    position: relative;
+    left: 120px;
 }

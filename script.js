@@ -2,13 +2,13 @@ document.addEventListener("keydown", function(event) {
     let key = event.key;
     let display = document.getElementById("display");
 
-    // Allow only numbers and basic operators
+    
     if (!isNaN(key) || "+-*/".includes(key)) {
-        display.value += key; // Append key input
+        display.value += key; 
     } else if (key === "Enter") {
-        display.value = eval(display.value); // Calculate result
+        display.value = eval(display.value); 
     } else if (key === "Backspace") {
-        display.value = display.value.slice(0, -1); // Remove last character
+        display.value = display.value.slice(0, -1); 
     }
 });
 document.querySelectorAll(".buttons button").forEach(button => {
@@ -20,8 +20,8 @@ document.querySelectorAll(".buttons button").forEach(button => {
         }
         else if (a == "C") {
             let z = document.getElementById("display");
-            z.value = "";  // Clear the input
-            z.placeholder = "0";  // Set new placeholder
+            z.value = "";  
+            z.placeholder = "0";  
         }
         else if (a === "Enter") {
             display.value = eval(display.value); 
