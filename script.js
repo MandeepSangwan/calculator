@@ -31,4 +31,3 @@ document.querySelectorAll(".buttons button").forEach(button => {
         }
     });
 });
-
